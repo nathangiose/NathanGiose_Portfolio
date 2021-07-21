@@ -11,12 +11,22 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./NathanPortfolio/styling/style.css" />
+    <link rel="stylesheet" href="./styling/style.css" />
+    <link rel="stylesheet" href="./styling/owlcarousel.css">
     <!-- FONT AWESOME -->
     <script
       src="https://kit.fontawesome.com/07c41cdf40.js"
       crossorigin="anonymous"
     ></script>
+    <!-- STYLESHEETS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
   </head>
   <body>
     <!-- BEGIN NAVBAR -->
@@ -25,6 +35,7 @@
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
       <a href="#projects">Projects</a>
+      <a href="#testimonials">Testimonials</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </div>
@@ -394,6 +405,112 @@
       </div>
       <!-- END PROJECTS -->
 
+
+<!-- BEGIN Testimonials -->
+
+      <a class="anchor" name="testimonials"></a>
+      <h2>Testimonials</h2>
+    </div>
+    <div class="content-body">
+      <!-- CARD #1 -->
+      <div class="owl-carousel">
+        <div class="owl-content">
+          <img
+            src="./images/Jason Wandrag.png"
+            alt="image of Jason"
+            style="width: 100px; height: 100px;"
+          />
+          <div class="owl-items">
+            <h2 class="heading">Jason Wandrag</h2>
+            <h3 class="heading line-2">Front-End Developer and Lecturer </h3>
+            <q>
+              Nathan John has proven himself to be both diligent and passionate when it comes to coding. He is constantly challenging himself, and exceeds expectations when handling an issue. I am very eager to see at what heights Nathan John will soar in his career
+            </q>
+          </div>
+        </div>
+        <div class="owl-content">
+          <img src="./images/Godwin Dzvapatsra.png" alt="photos" style="width: 100px; height: 100px;"/>
+          <div class="owl-items">
+            <h2 class="heading">Godwin Dzvapatsra</h2>
+            <h3 class="heading line-2">Head of Curriculum and Learning and Full-stack Developer</h3>
+            <q>
+              Nathan John is able to establish a principle, or work out a rule, or suggest an accurate reason for failure or success. He participates well in Python sessions and asks appropriate questions.
+
+            </q>
+          </div>
+        </div>
+        <div class="owl-content">
+          <img src="./images/Mujaid Kariem.png" alt="photos" style="width: 100px; height: 100px;" />
+          <div class="owl-items">
+            <h2 class="heading">Mujaid Kariem</h2>
+            <h3 class="heading line-2">Back-end Developer and colleague</h3>
+            <q>
+              Since I became acquainted with Nathan. I have known him to be a person of sound moral character and conduct whose honesty and integrity have always been unquestionably. He is a reliable, hardworking, skillful individual who does not hesitate to undertake any task assigned to him, no matter how onerous.
+            </q>
+          </div>
+        </div>
+        <div class="owl-content">
+          <img src="./images/Tashwill Andries.png" alt="photos" style="width: 100px; height: 100px;" />
+          <div class="owl-items">
+            <h2 class="heading">Tashwill Andries</h2>
+            <h3 class="heading line-2">Back-end Developer and colleague</h3>
+            <q>
+              Nathan John is a natural leader and always willing to step up to
+              any challenge thrown his way, With a wide knowledge of backend he
+              can bring any project to life. I do not doubt that he would make
+              an excellent backend developer.</q>
+          </div>
+        </div>
+        <div class="owl-content">
+          <img src="./images/Aaliyah Jardien.png" alt="photos" style="width: 100px; height: 100px;" />
+          <div class="owl-items">
+            <h2 class="heading">Aaliyah Jardien</h2>
+            <h3 class="heading line-2">Front-end Developer and colleague</h3>
+            <q>
+              Nathan is such a character. He's filled determination and loads of motivation that keeps him going. He's a natural leader and someone you can count on.</q>
+          </div>
+        </div>
+        <div class="owl-content">
+          <img src="./images/Uthmaan Breda.png" alt="photos" style="width: 100px; height: 100px;" />
+          <div class="owl-items">
+            <h2 class="heading">Uthmaan Breda</h2>
+            <h3 class="heading line-2">Back-end Developer and colleague</h3>
+            <q>
+              Nathan is a very focused guy, intelligent and good with people. I am privileged to be one of his peers.</q>
+          </div>
+        </div>
+      </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+          $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+              items: 1,
+              margin: 50,
+              loop: true,
+              stagePadding: 100,
+              dots: false,
+              autoplay: true,
+              responsive:{
+                0:{
+                  items:1,
+                  stagePadding:0
+    
+                },
+               500:{
+                  items:1,
+                  margin: 50,
+                  stagePadding:100,
+                }
+              }
+            });
+          });
+        </script>
+      
+<!-- END Testimonials -->
+
+
+
       <!-- BEGIN SKILLS -->
       <div class="row white box-shadow">
         <div class="side-content"></div>
@@ -472,7 +589,7 @@
         <div class="main-content">
           <div class="content-header"></div>
           <div class="content-body">
-            <p>Copyright NATHAN GIOSE 2021</p>
+            <p><span><i class="far fa-copyright"></i></span> NATHAN GIOSE 2021</p>
           </div>
         </div>
         <div class="side-content"></div>
